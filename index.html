@@ -1,5 +1,205 @@
-My Resume
-Mengapakah aku jadi lemah
-semaking ku sakit 
-semakin kau bahgia
-La la la
+<!DOCTYPE html>
+<html lang="en" dir="ltr">
+  <head>
+    <meta charset="utf-8">
+    <title>My Resume</title>
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.3.1/jquery.min.js"></script>
+  </head>
+  <style media="screen">
+    *{
+      margin: 0;
+      font-family: Arial, Helvetica, sans-serif;
+      line-height: 1.5em;
+    }
+
+    .box{
+      width: 30%;
+      height: 800px;
+      float: left;
+      background-color: #e5e7e8;
+      position:sticky;
+      top: 0;
+    }
+
+    .box2{
+      width: 65%;
+      height: auto;
+      padding-left: 35%;
+      background-color: #f9fdff;
+      margin-bottom: 10px;
+    }
+    .background{
+      text-align: right;
+    }
+    button{
+      width: 5px;
+      height: 5px;
+      padding: 15px;
+      margin: 10px;
+      border-radius: 20%;
+      font-size: 1.5em;
+      border: 2px solid grey;
+      cursor: pointer;
+    }
+
+    button:hover{
+      transform: scale(1.05);
+    }
+
+    button:focus{
+      outline:0;
+    }
+
+    .black{
+      background-color: black;
+      color: white;
+    }
+
+    .green{
+      background-color: #beffba;
+    }
+
+    .blue{
+      background-color: #f9fdff;
+    }
+
+    #name{
+      font-size: 25px;
+    }
+
+    .intro{
+      text-align: center;
+      font-size: 14px;
+      margin-top: 20px;
+    }
+
+    .intro img{
+      border-radius: 50%;
+    }
+
+    .contact, .socials{
+      margin-left: 80px;
+      width: 300px;
+      font-size: 14px;
+    }
+    h1{
+      color: #59d2ff;
+      padding: 10px;
+      border-bottom: 2px solid #59d2ff;
+      font-size: 20px;
+      margin-bottom: 10px;
+    }
+
+    .education, .facts{
+      line-height: 1.5em;
+    }
+  </style>
+
+
+  <body>
+    <div class="box">
+      <div class="intro">
+        <img src="profile.png" alt="Profile Picture" width="200px" height="200px"><br><br>
+        <p id="name"><strong>ABDUL AZIM</strong></p>
+        BACHELOR OF INFORMATION TECHNOLOGY
+        <br><br>
+        <div class="contact">
+          <h1>CONTACT</h1>
+          011-28971213<br>
+          06-2671970<br>
+          ajimtricky@gmail.com
+        </div>
+        <br><br>
+        <div class="socials">
+          <h1>SOCIAL</h1>
+          <a href="https://www.facebook.com/"><img src="facebook.png" alt="Facebook" width="50px" height="50px"><br></a>
+          Facebook <br>
+          <a href="https://twitter.com/login?lang=en"><img src="twitter.png" alt="Twitter" width="50px" height="50px"><br></a>
+          Twitter <br>
+          <a href="https://www.instagram.com/?hl=en"><img src="insta.png" alt="Instagram" width="50px" height="50px"><br></a>
+          Instagram <br>
+        </div>
+      </div>
+    </div>
+
+    <div class="box2">
+      <div class="background">
+        Change background
+        <button class="black" id="blackbtn"></button>
+        <button class="green" id="greenbtn"></button>
+        <button class="blue" id="bluebtn"></button>
+      </div>
+
+      <div class="education">
+        <h1>EDUCATIONAL BACKGROUND</h1>
+        <br>
+        <strong>PRIMARY SCHOOL: SK AYER MOLEK</strong>
+        <br><strong>January 2007 - November 2010</strong>
+        <p>First registered in SK Bukit Beringin for Standard 1 and Standard 2.
+          Moved to SK Ayer Molek and completed my UPSR with 4As and 1B. Apart from
+          academic achivements, I participated actively in a lot of co-curricular
+          activities such as Nasyid band, sports, and Quiz competition.</p>
+        <br>
+        <strong>SECONDARY SCHOOL: SMKA TUN PERAK</strong>
+        <br><strong>January 2011 - December 2015</strong>
+        <p>Enrolled in the year of 2011 and finished in the year 0f 2015. I was a student
+        of the Account Stream. In my secondary school, I focused more on academic
+        related competition compared to my primary school. I got 7As and 4Bs for my SPM.</p>
+        <br>
+        <strong>COLLEGE: INTERNATIONAL ISLAMIC UNIVERSITY MALAYSIA</strong>
+        <br><strong>September 2016 - </strong>
+        <p>My application for IIUM was accepted. I was an engineering student, however
+        I applied to change my course to Information and Communication Technology
+        since I love to work with technology especially computers. I am majoring in
+        Information Technology and will be specializing in Multimedia.<p>
+        <br>
+      </div>
+
+      <div class="facts">
+        <h1>FACTS</h1>
+        <br>
+        - Professional Gamer for "League of Legends" once<br>
+        - Joined a "League of Legends" tournament and place third <br>
+        - Looking foward to develop games in future <br>
+        - Listening to songs as inspiration <br>
+        - Love to travels especially to Korea and Japan <br><br>
+      </div>
+
+      <div class="volunteer">
+        <h1>VOLUNTARY WORK</h1>
+        - Subcommittee of Kulliyah Festival <br>
+        - Assistant of Preparation and Technical for FYP Showcase <br>
+        - Committee of Inspire Clube for Charity Event <br><br>
+      </div>
+
+      <div class="skills">
+        <h1>SKILLS</h1>
+        - Javascript <br>
+        - C and C++ <br>
+        - HTML and css <br>
+        - Trilingual [English, Malay, Arabic] <br>
+
+      </div>
+    </div>
+
+    <script>
+      $(document).ready(function(){
+        $("#blackbtn").click(function(){
+          $("body").removeClass();
+          $("body").addClass("black");
+        });
+
+        $("#greenbtn").click(function(){
+          $("body").removeClass();
+          $("body").addClass("green");
+        });
+
+        $("#bluebtn").click(function(){
+          $("body").removeClass();
+          $("body").addClass("blue");
+        });
+      });
+    </script>
+
+  </body>
+</html>
